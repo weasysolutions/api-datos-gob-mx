@@ -1,0 +1,22 @@
+{
+  "name": "api-datos-gob-mx",
+  "version": "1.0.0",
+  "description": "sdk for api.datos.gob.mx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weasysolutions/api-datos-gob-mx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weasysolutions/api-datos-gob-mx/issues"
+  },
+  "homepage": "https://github.com/weasysolutions/api-datos-gob-mx#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}

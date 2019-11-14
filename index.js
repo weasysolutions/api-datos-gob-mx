@@ -1,16 +1,8 @@
-# api-datos-gob-mx
-sdk for api.datos.gob.mx
-[api datos gob](https://datos.gob.mx/blog/catalogo-apidatosgobmx?category=api-cdn&tag=nula)
+const callApi = require('./api');
 
-# api documentation
-
-## endpoint(qs) -> Promise
-
-The next properties map between name and path documented:
-
-```js
-const nameToPathMap = {
-    catalog: 'api-catalog',
+const api = {};
+const apis = {
+  catalog: 'api-catalog',
   datasets: 'datasets',
   concesionesMineras: 'bases-de-datos-de-concesiones-mineras',
   calidadAire: 'calidadAire',
@@ -32,5 +24,12 @@ const nameToPathMap = {
   dgmEstadisticas: 'dgm.estadisticas',
   dataCore: 'data-core',
   gobmxFacts: 'gobmx.facts',
+
+};
+
+for (const apiName in apis) {
+  if (apis.hasOwnProperty(apiName)) {
+    api[apiName] = callApi(apis[apiName]);
+  }
 }
-```
+module.exports = api;
