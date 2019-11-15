@@ -1,6 +1,6 @@
 {
   "name": "api-datos-gob-mx",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "sdk for api.datos.gob.mx",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,11 @@
   "homepage": "https://github.com/weasysolutions/api-datos-gob-mx#readme",
   "dependencies": {
     "request": "^2.88.0"
-  }
+  },
+  "keywords": [
+    "datos",
+    "abiertos",
+    "mexico",
+    "mx"
+  ]
 }
